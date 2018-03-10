@@ -1,15 +1,13 @@
 '''count the letter of S in J
+map:map将传入的函数依次作用到序列的每个元素，并把结果作为新的Iterator返回.
+str.count(substr,star,end)  : 表示substr在str中在star和end之间出现的次数
 solution 1:
 def numJewelsInStones(self, J, S):
-    return sum(map(J.count, S))
-def numJewelsInStones(self, J, S):
-    return sum(map(S.count, J))               # this one after seeing https://discuss.leetcode.com/post/244105
+    return sum(map(J.count, S))               #计算S中的每个元素在J中出现次数总和。
+def numJewelsInStones(self, J, S):            没想到
+    return sum(map(S.count, J))               #计算J中的每个元素在S中出现的次数总和
 def numJewelsInStones(self, J, S):
     return sum(s in J for s in S)
-solution 3:
-def numJewelsInStones(self, J, S):
-        stones = Counter(S)
-        return sum([stones[s] for s in stones.keys() if s in set(J)])
 '''
 class Solution(object):
     def numJewelsInStones(self, J, S):
