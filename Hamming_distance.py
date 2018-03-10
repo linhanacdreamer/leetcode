@@ -8,7 +8,7 @@ count the number of 1 in the result of  x^y
         对于奇数来说 m&(m-1) = m-1
              假设x二进制表示为1yyyyyyy1
              x - 1二进制表示为1yyyyyyy0
-          此时 m&(m-1)的结果为1yyyyyyy0（去掉了一个最后一个1）
+          此时 m&(m-1)的结果为1yyyyyyy0（去掉了最后一个1）
         对于偶数来说 m&(m-1) : m-1 的
             假设x二进制表示为1yyyyyyy1000000
             x - 1二进制表示为1yyyyyyy0111111
