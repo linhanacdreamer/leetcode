@@ -1,4 +1,5 @@
 '''
+http://graphics.stanford.edu/~seander/bithacks.html#CountBitsSetTable
 count the number of 1 in the result of  x^y
         return bin(x^y).count('1')                # bin() 返回一个整数 int 或者长整数 long int 的二进制  '0b1010'
         return len([i for i in format(x ^ y, 'b') if i=='1'])  *format 格式化方法
